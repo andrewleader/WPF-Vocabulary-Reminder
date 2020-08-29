@@ -131,14 +131,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DesktopNotificationManagerCompat.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyNotificationActivator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -167,6 +165,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="aleader.Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.0.0-build.184.g84b9bf3458</Version>
+    </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.18</Version>
     </PackageReference>

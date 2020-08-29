@@ -23,7 +23,7 @@ namespace VocabularyReminder
         public static void ClearApplicationToast()
         {
             App.isShowPopup = false;
-            DesktopNotificationManagerCompat.History.Clear();
+            ToastNotificationManagerCompat.History.Clear();
         }
 
         public static async void showToastByVocabularyItem(Vocabulary _item)
@@ -56,18 +56,18 @@ namespace VocabularyReminder
             };
 
             App.isShowPopup = true;
-            DesktopNotificationManagerCompat.CreateToastNotifier().Show(_toastItem);
+            ToastNotificationManagerCompat.CreateToastNotifier().Show(_toastItem);
         }
 
 
         public static bool reloadLastToast()
         {
             //var _history = ToastNotificationManager.History.GetHistory();
-            var _history = DesktopNotificationManagerCompat.History.GetHistory();
+            var _history = ToastNotificationManagerCompat.History.GetHistory();
             if (_history.Count() > 0)
             {
                 App.isShowPopup = true;
-                DesktopNotificationManagerCompat.CreateToastNotifier().Show(_history.Last());
+                ToastNotificationManagerCompat.CreateToastNotifier().Show(_history.Last());
                 return true;
             }
             return false;
@@ -237,7 +237,7 @@ namespace VocabularyReminder
 
             try
             {
-                if (DesktopNotificationManagerCompat.CanUseHttpImages)
+                if (ToastNotificationManagerCompat.CanUseHttpImages)
                 {
                     return httpImage;
                 }

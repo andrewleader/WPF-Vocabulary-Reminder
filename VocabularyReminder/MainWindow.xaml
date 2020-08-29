@@ -13,7 +13,7 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Vocabulary Reminder" Height="746.25" Width="995" Closing="Window_Closing" Activated="Frm_MainWindow_Activated">
+        Title="Vocabulary Reminder 2" Height="746.25" Width="995" Closing="Window_Closing" Activated="Frm_MainWindow_Activated">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>

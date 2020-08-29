@@ -14,7 +14,7 @@ namespace DesktopNotifications.Services
     {
         public static void ClearToast()
         {
-            DesktopNotificationManagerCompat.History.Clear();
+            ToastNotificationManagerCompat.History.Clear();
         }
 
         public static void ShowToast(string msg, string subMsg = null)
@@ -33,7 +33,7 @@ namespace DesktopNotifications.Services
                 Tag = "Vocabulary",
                 Group = "Reminder",
             };
-            DesktopNotificationManagerCompat.CreateToastNotifier().Show(_toastItem);
+            ToastNotificationManagerCompat.CreateToastNotifier().Show(_toastItem);
         }
 
         private static ToastContent getToastContent(string msg, string subMsg = null)
