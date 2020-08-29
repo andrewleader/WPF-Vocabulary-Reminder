@@ -166,7 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="aleader.Microsoft.Toolkit.Uwp.Notifications">
-      <Version>7.0.0-build.184.g84b9bf3458</Version>
+      <Version>7.0.0-build.187.gb8917c6dcb</Version>
     </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.18</Version>
